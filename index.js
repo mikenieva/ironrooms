@@ -14,6 +14,8 @@ app.use(express.static("public"))
 app.set("views", __dirname + "/views")
 app.set("view engine", "hbs")
 
+hbs.registerPartials(__dirname + "/views/partials")
+
 connectDB()
 
 // 3. RUTAS
