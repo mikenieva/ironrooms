@@ -21,7 +21,7 @@ connectDB()
 // 3. RUTAS
 app.use("/", require("./routes/index"))
 
-
+app.use("/rooms", require("./routes/rooms"))
 
 // 4. SERVIDOR
 app.listen(process.env.PORT, () => {
